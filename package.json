@@ -1,0 +1,26 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "监控平台",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node build/automatic.js",
+    "start": "cross-env NODE_ENV=production && pm2 start --name monitor index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "chokidar": "^3.4.0",
+    "consola": "^2.14.0",
+    "cross-env": "^7.0.2",
+    "dayjs": "^1.8.29",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.1.0",
+    "koa-session": "^6.0.0",
+    "mongoose": "^5.9.20"
+  }
+}
